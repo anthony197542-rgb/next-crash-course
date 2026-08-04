@@ -4,14 +4,23 @@ import Link from "next/link";
 
 
 export default function Navbar() {
- 
-  return (
-    <nav className={styles.nav}>
-      <ul className={styles.ul}>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/posts">Posts</Link></li>
-        <li><Link href="/users">Users</Link></li>
+ console.log(styles);
+  
+    return (
+      <nav className={styles.nav}>
+        <ul className={styles.ul}>
+          <Link href={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link href="/posts">
+            <li>Posts</li>
+          </Link>
+          <Link href="/users">
+            <li>Users</li>
+          </Link>
+          <input type="text" />
         </ul>
-    </nav>
-  )
+      </nav>
+    )
+    
 }

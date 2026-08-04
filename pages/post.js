@@ -1,12 +1,17 @@
-import Link from "next/link";
+import Link from "next/link"
+import styles from "../styles/Navbar.module.css"
 
-export default function Post({ post }) {
+export default function Navbar() {
   return (
-    <div className="card">
-      <Link href={`/posts/${post.id}`}>
-        <h3 style={{ textTransform: "capitalize" }}>{post.title}</h3>
-      </Link>
-      <p style={{ marginTop: "8px", color: "#666" }}>{post.body}</p>
-    </div>
-  );
+    <nav className={styles.nav}>
+      <ul className={styles.ul}>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/posts">Posts</Link></li>
+        <li><Link href="/users">Users</Link></li>
+        <li><input type="text" /></li>
+      </ul>
+    </nav>
+  )
 }
+
+
