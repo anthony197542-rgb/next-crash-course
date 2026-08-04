@@ -10,7 +10,9 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <ul className={styles.ul}>
           <Link href={"/"}>
+
             <li>Home</li>
+
           </Link>
           <Link href="/posts">
             <li>Posts</li>
@@ -18,7 +20,7 @@ export default function Navbar() {
           <Link href="/users">
             <li>Users</li>
           </Link>
-          <input type="text" />
+          <input placeholder="Search..." type="text" />
         </ul>
       </nav>
     )
