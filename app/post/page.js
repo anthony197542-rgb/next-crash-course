@@ -1,13 +1,10 @@
-import React from 'react'
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
-function Page() {
+export default function Home() {
     return (
         <div>
-            <Navbar />
-            This is the post page
-            </div>
-    )
+        
+        </div>
+    );
 }
-
-export default Page
