@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Navbar () {
     return (
         <nav className="bg-blue-400">
@@ -5,10 +7,10 @@ function Navbar () {
                 <Link href={"/"}>
                 <li>Home</li>
                 </Link>
-                <Link href={"/Posts"}>
+                <Link href={"/posts"}>
                 <li>Posts</li>
                 </Link>
-                <Link href={"/Contact"}>
+                <Link href={"/contact"}>
                 <li>Contact</li>
                 </Link>
                 <input placeholder="search" />
